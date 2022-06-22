@@ -39,23 +39,6 @@ entries:
     version: 1.0.0
   deployment:
   - apiVersion: v1
-    created: "2022-06-22T02:28:23.457608676-05:00"
-    description: The Universal Deployment Helm Chart
-    digest: 512415cd24234ce9c0e553182d8f848bdc9df7bac77a6d79deec7126adea9588
-    home: https://github.com/MefistoBaal/Universal-Helm-Charts
-    keywords:
-    - deployment
-    - helm
-    maintainers:
-    - email: dasanti_12@hotmail.com
-      name: Santiago Hurtado
-    name: deployment
-    sources:
-    - https://github.com/MefistoBaal/Universal-Helm-Charts/charts/deployment
-    urls:
-    - https://github.com/MefistoBaal/Universal-Helm-Charts/releases/download/deployment-1.0.1/deployment-1.0.1.tgz
-    version: 1.0.1
-  - apiVersion: v1
     created: "2022-06-22T01:39:45.118072237-05:00"
     description: The Universal Deployment Helm Chart
     digest: 3346254b631fb316af2e069ba37cdf80ac4f7020b0338462640ddd304bbe1afb
