@@ -1,0 +1,14 @@
+apiVersion: v1
+name: cronjob-multi
+version: 1.0.0
+description: The Universal Cronjob Multi Helm Chart, to spin up many similar cronjobs
+keywords:
+  - cronjob
+  - cronjob-multi
+  - helm
+home: https://github.com/MefistoBaal/Universal-Helm-Charts
+sources:
+  - https://github.com/MefistoBaal/Universal-Helm-Charts/charts/cronjob-multi
+maintainers:
+  - name: Santiago Hurtado
+    email: dasanti_12@hotmail.com
