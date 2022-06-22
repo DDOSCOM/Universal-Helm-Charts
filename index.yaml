@@ -1,0 +1,76 @@
+apiVersion: v1
+entries:
+  cronjob:
+  - apiVersion: v1
+    created: "2022-06-22T01:39:44.797303362-05:00"
+    description: The Universal Cronjob Helm Chart
+    digest: cf02a45f3b2f5c7958d23ea93dd86d10b401a004c4e667bcf8508303967293d4
+    home: https://github.com/MefistoBaal/Universal-Helm-Charts
+    keywords:
+    - cronjob
+    - helm
+    maintainers:
+    - email: dasanti_12@hotmail.com
+      name: Santiago Hurtado
+    name: cronjob
+    sources:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/charts/cronjob
+    urls:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/releases/download/cronjob-1.0.0/cronjob-1.0.0.tgz
+    version: 1.0.0
+  cronjob-multi:
+  - apiVersion: v1
+    created: "2022-06-22T01:39:44.960172556-05:00"
+    description: The Universal Cronjob Multi Helm Chart, to spin up many similar cronjobs
+    digest: 538affb6aec077e5fc681469e2c2419e1add286b384f1cb2f648afb87b94195f
+    home: https://github.com/MefistoBaal/Universal-Helm-Charts
+    keywords:
+    - cronjob
+    - cronjob-multi
+    - helm
+    maintainers:
+    - email: dasanti_12@hotmail.com
+      name: Santiago Hurtado
+    name: cronjob-multi
+    sources:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/charts/cronjob-multi
+    urls:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/releases/download/cronjob-multi-1.0.0/cronjob-multi-1.0.0.tgz
+    version: 1.0.0
+  deployment:
+  - apiVersion: v1
+    created: "2022-06-22T01:39:45.118072237-05:00"
+    description: The Universal Deployment Helm Chart
+    digest: 3346254b631fb316af2e069ba37cdf80ac4f7020b0338462640ddd304bbe1afb
+    home: https://github.com/MefistoBaal/Universal-Helm-Charts
+    keywords:
+    - deployment
+    - helm
+    maintainers:
+    - email: dasanti_12@hotmail.com
+      name: Santiago Hurtado
+    name: deployment
+    sources:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/charts/deployment
+    urls:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/releases/download/deployment-1.0.0/deployment-1.0.0.tgz
+    version: 1.0.0
+  statefulset:
+  - apiVersion: v1
+    created: "2022-06-22T01:39:45.290705378-05:00"
+    description: The Universal Statefulset Helm Chart
+    digest: 1add5bf887ca4d3a632f7353f4660afe8eeeb84c09102f2b172eab645755c918
+    home: https://github.com/MefistoBaal/Universal-Helm-Charts
+    keywords:
+    - statefulset
+    - helm
+    maintainers:
+    - email: dasanti_12@hotmail.com
+      name: Santiago Hurtado
+    name: statefulset
+    sources:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/charts/statefulset
+    urls:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/releases/download/statefulset-1.0.0/statefulset-1.0.0.tgz
+    version: 1.0.0
+generated: "2022-06-22T01:39:45.290723562-05:00"
