@@ -30,6 +30,7 @@ spec:
         {{- range .paths }}
           - path: {{ .path }}
             backend:
+              pathType: Prefix
               service:
                 name: {{ .serviceName }}
                 port:
@@ -38,9 +39,12 @@ spec:
       {{- else }}
         {{- range .paths }}
           - path: {{ . }}
+            pathType: Prefix
             backend:
-              serviceName: {{ $fullName }}
-              servicePort: 80
+              service:
+                name: {{ $fullName }}
+                port:
+                  number: 80
         {{- end }}
       {{- end }}
   {{- end }}
