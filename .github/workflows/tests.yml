@@ -10,6 +10,7 @@ on:
     
 jobs:
   test:
+    name: Test Helm Charts
     runs-on: ubuntu-latest
     container:
       image: quay.io/helmpack/chart-testing:v3.6.0
@@ -17,6 +18,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: "Test Config ⚙️"
         run: |
+          git config --global --add safe.directory /__w/Universal-Helm-Charts/Universal-Helm-Charts
           git remote add upstream https://github.com/paulczar/percona-helm-charts
           git fetch upstream master
           ct lint --config scripts/chart_testing.yaml
