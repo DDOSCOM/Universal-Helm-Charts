@@ -6,6 +6,7 @@ set -o pipefail
 
 export GIT_REPOSITORY_URL=$GITHUB_REPOSITORY
 export GIT_USERNAME=$GITHUB_ACTOR
+export GIT_EMAIL="$(git log -n 1 --pretty=format:%ae)"
 export GIT_REPOSITORY_NAME=$GIT_REPOSITORY_URL
 
 : "${CH_TOKEN:?Environment variable CH_TOKEN must be set}"
