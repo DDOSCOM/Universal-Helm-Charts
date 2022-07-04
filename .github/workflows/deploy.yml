@@ -22,7 +22,10 @@ jobs:
       - name: "Deploy 🚀"
         env:
           CH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+<<<<<<< Updated upstream
           GIT_EMAIL: ${{ github.event.pusher.email }}
+=======
+>>>>>>> Stashed changes
         run: |
           cd scripts
           chmod +x release.sh
