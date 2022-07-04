@@ -1,0 +1,26 @@
+name: Deploy
+
+on:
+  push:
+    branches: ["master", "develop"]
+  pull_request:
+    branches: ["master", "develop"]
+
+  workflow_dispatch:
+    
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    container:
+      image: quay.io/helmpack/chart-testing:v3.6.0
+    steps:
+      - uses: actions/checkout@v3
+      - name: "Test Config ⚙️"
+        run: |
+          git remote add upstream https://github.com/paulczar/percona-helm-charts
+          git fetch upstream master
+          ct lint --config scripts/chart_testing.yaml
+      - name: "Test Installation"
+        run: |
+          chmod +x scripts/install_charts.sh
+          ./scripts/install_charts.sh

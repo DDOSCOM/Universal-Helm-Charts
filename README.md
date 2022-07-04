@@ -4,9 +4,9 @@ This is a set of standardized helm charts meant for installation of best-practic
 
 # Usage
 
-```
+```bash
 # Add the repository with..
-
+helm repo add universal-helm-charts https://helm.mefistobaal.tech/
 ```
 
 Then after this use the "deployment" helm chart within this repo with your own values file.  TODO add more docs here.
