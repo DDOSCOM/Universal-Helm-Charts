@@ -9,7 +9,7 @@ echo "Installing Helm..."
 curl -LO "https://get.helm.sh/helm-v$HELM_VERSION-linux-amd64.tar.gz"
 sudo mkdir -p "/usr/local/helm-v$HELM_VERSION"
 sudo tar -xzf "helm-v$HELM_VERSION-linux-amd64.tar.gz" -C "/usr/local/helm-v$HELM_VERSION"
-sudo ln -s "/usr/local/helm-v$HELM_VERSION/linux-amd64/helm" /usr/local/bin/helm
+sudo ln -sfn "/usr/local/helm-v$HELM_VERSION/linux-amd64/helm" /usr/local/bin/helm
 rm -f "helm-v$HELM_VERSION-linux-amd64.tar.gz"
 helm init --client-only
 
