@@ -4,7 +4,7 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
-export CH_TOKEN=${{ secrets.GITHUB_TOKEN }}
+export CH_TOKEN=$GITHUB_TOKEN
 export GIT_REPOSITORY_URL=$GITHUB_REPOSITORY
 export GIT_USERNAME=$GITHUB_ACTOR
 export GIT_EMAIL=${{ github.event.pusher.email }}
