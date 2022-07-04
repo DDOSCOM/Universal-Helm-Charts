@@ -10,12 +10,16 @@ on:
     
 jobs:
   build:
-    name: Install all stuff
+    name: Build and Deploy
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: "Install Tools"
+      - name: "Install Tools 🔧"
         run: |
           cd scripts
           chmod +x install_tools.sh
           ./install_tools.sh
+      - name: "Deploy 🚀"
+        run: |
+          chmod +x release.sh
+          ./release.sh
