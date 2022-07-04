@@ -20,6 +20,9 @@ jobs:
           chmod +x install_tools.sh
           ./install_tools.sh
       - name: "Deploy 🚀"
+        env:
+          CH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIT_EMAIL: ${{ github.event.pusher.email }}
         run: |
           cd scripts
           chmod +x release.sh
