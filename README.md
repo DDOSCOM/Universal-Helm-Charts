@@ -21,6 +21,14 @@ Then after this use the "deployment" helm chart within this repo with your own v
 * Auto-publish updates of helm charts via Github Actions
 * Profit...?  :P
 
+# Test Locally
+
+- **Docker Required**
+
+```bash
+docker run -it --network host --workdir=/data --volume ~/.kube/config:/root/.kube/config:ro --volume $(pwd):/data quay.io/helmpack/chart-testing:v3.5.0 ct lint --config scripts/ct.yaml
+```
+
 # Contact
 
 For information/questions either file an issue on Github

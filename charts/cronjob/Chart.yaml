@@ -1,13 +1,14 @@
 apiVersion: v1
 name: cronjob
-version: 1.0.0
+version: 1.0.1
 description: The Universal Cronjob Helm Chart
 keywords:
   - cronjob
   - helm
 home: https://github.com/MefistoBaal/Universal-Helm-Charts
 sources:
-  - https://github.com/MefistoBaal/Universal-Helm-Charts/charts/cronjob
+  - https://github.com/MefistoBaal/Universal-Helm-Charts/charts/deployment
+  - https://helm.mefistobaal.tech
 maintainers:
-  - name: Santiago Hurtado
+  - name: MefistoBaal
     email: dasanti_12@hotmail.com
