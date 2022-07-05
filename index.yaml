@@ -2,6 +2,24 @@ apiVersion: v1
 entries:
   cronjob:
   - apiVersion: v1
+    created: "2022-07-05T01:23:13.013202313Z"
+    description: The Universal Cronjob Helm Chart
+    digest: d61c5b17879c09dc8b9a611d03240403b7d4f7eb39b90b950c0e755b22cbaabb
+    home: https://github.com/MefistoBaal/Universal-Helm-Charts
+    keywords:
+    - cronjob
+    - helm
+    maintainers:
+    - email: dasanti_12@hotmail.com
+      name: MefistoBaal
+    name: cronjob
+    sources:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/charts/deployment
+    - https://helm.mefistobaal.tech
+    urls:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/releases/download/cronjob-1.0.1/cronjob-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v1
     created: "2022-06-22T01:39:44.797303362-05:00"
     description: The Universal Cronjob Helm Chart
     digest: cf02a45f3b2f5c7958d23ea93dd86d10b401a004c4e667bcf8508303967293d4
@@ -19,6 +37,25 @@ entries:
     - https://github.com/MefistoBaal/Universal-Helm-Charts/releases/download/cronjob-1.0.0/cronjob-1.0.0.tgz
     version: 1.0.0
   cronjob-multi:
+  - apiVersion: v1
+    created: "2022-07-05T01:23:13.250801726Z"
+    description: The Universal Cronjob Multi Helm Chart, to spin up many similar cronjobs
+    digest: 094313fb37e8f799cefdea2ec193e793dd0af803608a200326786e9df618b62f
+    home: https://github.com/MefistoBaal/Universal-Helm-Charts
+    keywords:
+    - cronjob
+    - cronjob-multi
+    - helm
+    maintainers:
+    - email: dasanti_12@hotmail.com
+      name: MefistoBaal
+    name: cronjob-multi
+    sources:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/charts/deployment
+    - https://helm.mefistobaal.tech
+    urls:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/releases/download/cronjob-multi-1.0.1/cronjob-multi-1.0.1.tgz
+    version: 1.0.1
   - apiVersion: v1
     created: "2022-06-22T01:39:44.960172556-05:00"
     description: The Universal Cronjob Multi Helm Chart, to spin up many similar cronjobs
@@ -39,6 +76,24 @@ entries:
     version: 1.0.0
   deployment:
   - apiVersion: v1
+    created: "2022-07-05T01:23:13.489564039Z"
+    description: The Universal Deployment Helm Chart
+    digest: d17f779746ce37ceea5387b1e071ae61f60c1a481045b6eb7ae9171ff87ddff1
+    home: https://github.com/MefistoBaal/Universal-Helm-Charts
+    keywords:
+    - deployment
+    - helm
+    maintainers:
+    - email: dasanti_12@hotmail.com
+      name: MefistoBaal
+    name: deployment
+    sources:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/charts/deployment
+    - https://helm.mefistobaal.tech
+    urls:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/releases/download/deployment-1.0.1/deployment-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v1
     created: "2022-06-22T01:39:45.118072237-05:00"
     description: The Universal Deployment Helm Chart
     digest: 3346254b631fb316af2e069ba37cdf80ac4f7020b0338462640ddd304bbe1afb
@@ -57,6 +112,24 @@ entries:
     version: 1.0.0
   statefulset:
   - apiVersion: v1
+    created: "2022-07-05T01:23:13.742422159Z"
+    description: The Universal Statefulset Helm Chart
+    digest: 0a90570d32ad6ed6f847a55a97d0969e3d88aedb77831d4795de10ac43863985
+    home: https://github.com/MefistoBaal/Universal-Helm-Charts
+    keywords:
+    - statefulset
+    - helm
+    maintainers:
+    - email: dasanti_12@hotmail.com
+      name: MefistoBaal
+    name: statefulset
+    sources:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/charts/deployment
+    - https://helm.mefistobaal.tech
+    urls:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/releases/download/statefulset-1.0.1/statefulset-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v1
     created: "2022-06-22T01:39:45.290705378-05:00"
     description: The Universal Statefulset Helm Chart
     digest: 1add5bf887ca4d3a632f7353f4660afe8eeeb84c09102f2b172eab645755c918
@@ -73,4 +146,4 @@ entries:
     urls:
     - https://github.com/MefistoBaal/Universal-Helm-Charts/releases/download/statefulset-1.0.0/statefulset-1.0.0.tgz
     version: 1.0.0
-generated: "2022-06-22T02:28:23.611709238-05:00"
+generated: "2022-07-05T01:23:13.742450259Z"
