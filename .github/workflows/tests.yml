@@ -12,17 +12,30 @@ jobs:
   test:
     name: Test Helm Charts
     runs-on: ubuntu-latest
-    container:
-      image: quay.io/helmpack/chart-testing:v3.6.0
     steps:
-      - uses: actions/checkout@v3
-      - name: "Test Config ⚙️"
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Set up Helm
+        uses: azure/setup-helm@v3
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.9
+      - name: Set up Chart Testing
+        uses: helm/chart-testing-action@v2.2.1
+      - name: Run chart-testing (list-changed)
+        id: list-changed
         run: |
-          git config --global --add safe.directory /__w/Universal-Helm-Charts/Universal-Helm-Charts
-          git remote add upstream https://github.com/paulczar/percona-helm-charts
-          git fetch upstream master
-          ct lint --config scripts/chart_testing.yaml
-      - name: "Test Installation"
-        run: |
-          chmod +x scripts/install_charts.sh
-          ./scripts/install_charts.sh
+          changed=$(ct list-changed --config scripts/ct.yaml)
+          if [[ -n "$changed" ]]; then
+            echo "::set-output name=changed::true"
+          fi
+      - name: Run chart-testing (lint)
+        run: ct lint --config scripts/ct.yaml
+      - name: Create kind cluster
+        uses: helm/kind-action@v1.3.0
+        if: steps.list-changed.outputs.changed == 'true'
+      - name: Run chart-testing (install)
+        run: ct install --config scripts/ct.yaml
