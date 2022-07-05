@@ -8,6 +8,7 @@ keywords:
 home: https://github.com/MefistoBaal/Universal-Helm-Charts
 sources:
   - https://github.com/MefistoBaal/Universal-Helm-Charts/charts/deployment
+  - https://helm.mefistobaal.tech
 maintainers:
   - name: Santiago Hurtado
     email: dasanti_12@hotmail.com
