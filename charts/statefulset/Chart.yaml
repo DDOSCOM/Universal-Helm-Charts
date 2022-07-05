@@ -10,5 +10,5 @@ sources:
   - https://github.com/MefistoBaal/Universal-Helm-Charts/charts/deployment
   - https://helm.mefistobaal.tech
 maintainers:
-  - name: Santiago Hurtado
+  - name: MefistoBaal
     email: dasanti_12@hotmail.com

@@ -8,7 +8,8 @@ schedule: ""
 # schedule: "0 0 * * *"  # Example for once a day at midnight (utc)
 
 # This restricts jobs from every running concurrently
-concurrencyPolicy: "Forbid" # Can also be "Allow"
+# Can also be "Allow"
+concurrencyPolicy: "Forbid"
 
 # This keeps kubectl tidier removing unnecessary finished successful pods
 successfulJobsHistoryLimit: 1
