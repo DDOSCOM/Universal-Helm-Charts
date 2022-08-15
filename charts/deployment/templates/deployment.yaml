@@ -57,7 +57,13 @@ spec:
 {{- end }}
 {{- end }}
     spec:
-
+      topologySpreadConstraints:
+        - maxSkew: {{ default "3" .Values.maxPodsPerNode }}
+          topologyKey: kubernetes.io/hostname
+          whenUnsatisfiable: ScheduleAnyway
+          labelSelector:
+            matchLabels:
+              type: {{ template "name" . }}
       # If we have a hostname set, set it here
 {{- if .Values.hostname }}
       hostname: {{ with .Values.hostname }}{{ tpl . $ | quote }}{{- end }}
