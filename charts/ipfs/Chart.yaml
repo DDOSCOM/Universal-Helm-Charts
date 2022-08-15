@@ -1,9 +1,10 @@
 apiVersion: v1
-name: deployment
-version: 1.0.2
-description: The Universal Deployment Helm Chart
+name: ipfs
+version: 0.0.1
+description: The Universal IPFS Cluster Helm Chart
 keywords:
-  - deployment
+  - ipfs
+  - cluster
   - helm
 home: https://github.com/MefistoBaal/Universal-Helm-Charts
 sources:
