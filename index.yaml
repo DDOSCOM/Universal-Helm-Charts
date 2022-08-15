@@ -76,6 +76,24 @@ entries:
     version: 1.0.0
   deployment:
   - apiVersion: v1
+    created: "2022-08-15T22:57:15.651667469Z"
+    description: The Universal Deployment Helm Chart
+    digest: 74f0edcf3c884002bd3507569e059391b8128cd590094817058e8217e6160067
+    home: https://github.com/MefistoBaal/Universal-Helm-Charts
+    keywords:
+    - deployment
+    - helm
+    maintainers:
+    - email: dasanti_12@hotmail.com
+      name: MefistoBaal
+    name: deployment
+    sources:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/charts/deployment
+    - https://helm.mefistobaal.tech
+    urls:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/releases/download/deployment-1.0.2/deployment-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v1
     created: "2022-07-05T01:23:13.489564039Z"
     description: The Universal Deployment Helm Chart
     digest: d17f779746ce37ceea5387b1e071ae61f60c1a481045b6eb7ae9171ff87ddff1
@@ -110,6 +128,26 @@ entries:
     urls:
     - https://github.com/MefistoBaal/Universal-Helm-Charts/releases/download/deployment-1.0.0/deployment-1.0.0.tgz
     version: 1.0.0
+  ipfs:
+  - apiVersion: v1
+    created: "2022-08-15T22:57:15.770666383Z"
+    description: The Universal IPFS Cluster Helm Chart
+    digest: b392075eb871482cb5bb2ffbf1bc99dddc17596a3de65761fd1553f91849bd12
+    home: https://github.com/MefistoBaal/Universal-Helm-Charts
+    keywords:
+    - ipfs
+    - cluster
+    - helm
+    maintainers:
+    - email: dasanti_12@hotmail.com
+      name: MefistoBaal
+    name: ipfs
+    sources:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/charts/deployment
+    - https://helm.mefistobaal.tech
+    urls:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/releases/download/ipfs-0.0.1/ipfs-0.0.1.tgz
+    version: 0.0.1
   statefulset:
   - apiVersion: v1
     created: "2022-07-05T01:23:13.742422159Z"
@@ -146,4 +184,4 @@ entries:
     urls:
     - https://github.com/MefistoBaal/Universal-Helm-Charts/releases/download/statefulset-1.0.0/statefulset-1.0.0.tgz
     version: 1.0.0
-generated: "2022-07-05T01:23:13.742450259Z"
+generated: "2022-08-15T22:57:15.770799386Z"
