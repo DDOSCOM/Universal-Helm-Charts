@@ -76,6 +76,24 @@ entries:
     version: 1.0.0
   deployment:
   - apiVersion: v1
+    created: "2022-08-17T17:27:36.886808289Z"
+    description: The Universal Deployment Helm Chart
+    digest: fad68e3e2c817c031f1bf5c5025042b5e5d9a4593f6abe4662aeba8a6f1c81f3
+    home: https://github.com/MefistoBaal/Universal-Helm-Charts
+    keywords:
+    - deployment
+    - helm
+    maintainers:
+    - email: dasanti_12@hotmail.com
+      name: MefistoBaal
+    name: deployment
+    sources:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/charts/deployment
+    - https://helm.mefistobaal.tech
+    urls:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/releases/download/deployment-1.0.7/deployment-1.0.7.tgz
+    version: 1.0.7
+  - apiVersion: v1
     created: "2022-08-17T16:55:51.589783648Z"
     description: The Universal Deployment Helm Chart
     digest: 719951057e37307644f6957e998c7fa476cf38c135ce07164a736957f39b82f3
@@ -238,4 +256,4 @@ entries:
     urls:
     - https://github.com/MefistoBaal/Universal-Helm-Charts/releases/download/statefulset-1.0.0/statefulset-1.0.0.tgz
     version: 1.0.0
-generated: "2022-08-17T16:55:51.589806448Z"
+generated: "2022-08-17T17:27:36.886945993Z"
