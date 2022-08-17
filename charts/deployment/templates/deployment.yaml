@@ -89,18 +89,6 @@ spec:
       # If we have any init containers
       initContainers:
 {{- with .Values.initContainers }}
-{{ toYaml . | indent 8 }}
-        env:
-          {{- range .Values.globalEnvs }}
-            - name: {{ .name | quote }}
-              {{- if .value }}
-              value: {{ with .value }}{{ tpl . $ | quote }}{{- end }}
-              {{- end }}
-              {{- if .valueFrom }}
-              valueFrom:
-{{ .valueFrom | toYaml | indent 16 }}
-              {{- end }}
-            {{- end }}
 {{- end }}
       # Our list of container(s)
       containers:
