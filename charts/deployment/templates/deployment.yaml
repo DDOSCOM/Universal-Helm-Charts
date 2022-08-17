@@ -89,6 +89,7 @@ spec:
       # If we have any init containers
       initContainers:
 {{- with .Values.initContainers }}
+{{ toYaml . | indent 8 }}
 {{- end }}
       # Our list of container(s)
       containers:
