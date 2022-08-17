@@ -58,7 +58,7 @@ spec:
 {{- end }}
     spec:
       topologySpreadConstraints:
-        - maxSkew: {{ default "3" .Values.maxPodsPerNode }}
+        - maxSkew: {{ default "1" .Values.maxPodsPerNode }}
           topologyKey: kubernetes.io/hostname
           whenUnsatisfiable: ScheduleAnyway
           labelSelector:
