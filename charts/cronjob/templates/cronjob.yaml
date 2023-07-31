@@ -35,6 +35,13 @@ spec:
             {{ $k }}:  {{ with $v }}{{ tpl . $ | quote }}{{- end }}
 {{- end }}
 {{- end }}
+
+{{- if .Values.podLabels }}
+          labels:
+{{- range $k, $v := .Values.podLabels }}
+            {{ $k }}:  {{ with $v }}{{ tpl . $ | quote }}{{- end }}
+{{- end }}
+{{- end }}
         spec:
           # If we have a priority class set, set it here
 {{- if .Values.priorityClassName }}

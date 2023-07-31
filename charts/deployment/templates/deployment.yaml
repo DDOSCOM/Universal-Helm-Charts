@@ -56,6 +56,12 @@ spec:
         {{ $k }}:  {{ with $v }}{{ tpl . $ | quote }}{{- end }}
 {{- end }}
 {{- end }}
+{{- if .Values.podLabels }}
+      labels:
+{{- range $k, $v := .Values.podLabels }}
+        {{ $k }}: {{ with $v }}{{ tpl . $ | quote}}{{- end }}
+{{- end }}
+{{- end }}
     spec:
       topologySpreadConstraints:
         - maxSkew: {{ default "1" .Values.maxPodsPerNode }}

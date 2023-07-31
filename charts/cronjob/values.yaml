@@ -65,6 +65,10 @@ image:
 podAnnotations: {}
   # tick: "1528451892"
 
+# Additional pod labels
+podLabels: {}
+  # key: "value"
+
 # Environment variables (for globals, all deployments)
 globalEnvs: []
 
