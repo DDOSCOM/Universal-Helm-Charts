@@ -186,7 +186,7 @@ Return the appropriate apiVersion for networkpolicy.
 Return the appropriate apiVersion for podsecuritypolicy.
 */}}
 {{- define "podSecurityPolicy.apiVersion" -}}
-  {{- print "policy/v1beta1" -}}
+  {{- print "policy/v1" -}}
 {{- end -}}
 
 {{/*
@@ -207,7 +207,7 @@ Return the appropriate apiVersion for cronjob.
   {{- if (default $.Capabilities "").APIVersions.Has "batch/v1" }}
     {{- print "batch/v1" -}}
   {{- else -}}
-    {{- print "batch/v1beta1" -}}
+    {{- print "batch/v1" -}}
   {{- end -}}
 {{- end -}}
 
@@ -232,7 +232,7 @@ Return the appropriate apiVersion for poddisruptionbudget.
   {{- if (default $.Capabilities "").APIVersions.Has "policy/v1" }}
     {{- print "policy/v1" -}}
   {{- else -}}
-    {{- print "policy/v1beta1" -}}
+    {{- print "policy/v1" -}}
   {{- end -}}
 {{- end -}}
 
@@ -245,7 +245,7 @@ Return the appropriate apiVersion for horizontalpodautoscaler.
   {{- else if $.Capabilities.APIVersions.Has "autoscaling/v2beta2/HorizontalPodAutoscaler" }}
     {{- print "autoscaling/v2beta2" }}
   {{- else }}
-    {{- print "autoscaling/v2beta1" }}
+    {{- print "autoscaling/v2" }}
   {{- end }}
 {{- end }}
 
