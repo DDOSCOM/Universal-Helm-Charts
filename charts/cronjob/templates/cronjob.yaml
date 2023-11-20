@@ -2,7 +2,7 @@
 # Standardized Templates - Cronjob
 # TODO: This needs to be tested and re-aligned to deployment/statefulset standards
 ################################################
-apiVersion: batch/v1beta1
+apiVersion: batch/v1
 kind: CronJob
 metadata:
   name: {{ template "name" . }}
