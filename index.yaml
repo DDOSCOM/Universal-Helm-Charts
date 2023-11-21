@@ -2,6 +2,24 @@ apiVersion: v1
 entries:
   cronjob:
   - apiVersion: v1
+    created: "2023-11-21T15:44:46.959772338Z"
+    description: The Universal Cronjob Helm Chart
+    digest: 8ee51ce13e3d8efc6b1e4fef1aeb3540dc5a369f50788c40dd081b9d0ba3b5fa
+    home: https://github.com/MefistoBaal/Universal-Helm-Charts
+    keywords:
+    - cronjob
+    - helm
+    maintainers:
+    - email: dasanti_12@hotmail.com
+      name: MefistoBaal
+    name: cronjob
+    sources:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/charts/deployment
+    - https://helm.mefistobaal.tech
+    urls:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/releases/download/cronjob-1.0.4/cronjob-1.0.4.tgz
+    version: 1.0.4
+  - apiVersion: v1
     created: "2023-11-20T22:50:15.283726486Z"
     description: The Universal Cronjob Helm Chart
     digest: 60694eb74ef478e1b8f13ebec126d25ec67bac7ec73ea2dc966a926b61fdedfb
@@ -74,6 +92,25 @@ entries:
     version: 1.0.0
   cronjob-multi:
   - apiVersion: v1
+    created: "2023-11-21T15:44:47.123167222Z"
+    description: The Universal Cronjob Multi Helm Chart, to spin up many similar cronjobs
+    digest: a25c3476dd916156b93ffd3f9d287cb1155ec1a1537fed2b565049b7d62633ee
+    home: https://github.com/MefistoBaal/Universal-Helm-Charts
+    keywords:
+    - cronjob
+    - cronjob-multi
+    - helm
+    maintainers:
+    - email: dasanti_12@hotmail.com
+      name: MefistoBaal
+    name: cronjob-multi
+    sources:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/charts/deployment
+    - https://helm.mefistobaal.tech
+    urls:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/releases/download/cronjob-multi-1.0.3/cronjob-multi-1.0.3.tgz
+    version: 1.0.3
+  - apiVersion: v1
     created: "2023-11-20T22:50:15.629665722Z"
     description: The Universal Cronjob Multi Helm Chart, to spin up many similar cronjobs
     digest: 14a979fe88420ef6fbd49aeaf935db47b1180a623f475dd14cda95d0bdd2aba0
@@ -130,6 +167,24 @@ entries:
     - https://github.com/MefistoBaal/Universal-Helm-Charts/releases/download/cronjob-multi-1.0.0/cronjob-multi-1.0.0.tgz
     version: 1.0.0
   deployment:
+  - apiVersion: v1
+    created: "2023-11-21T15:44:47.274957144Z"
+    description: The Universal Deployment Helm Chart
+    digest: 9219e4ac1c70e99357a35757573c78c819b5eecab07ee24acae8bd4e1f822410
+    home: https://github.com/MefistoBaal/Universal-Helm-Charts
+    keywords:
+    - deployment
+    - helm
+    maintainers:
+    - email: dasanti_12@hotmail.com
+      name: MefistoBaal
+    name: deployment
+    sources:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/charts/deployment
+    - https://helm.mefistobaal.tech
+    urls:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/releases/download/deployment-1.0.12/deployment-1.0.12.tgz
+    version: 1.0.12
   - apiVersion: v1
     created: "2023-11-21T02:48:50.87764802Z"
     description: The Universal Deployment Helm Chart
@@ -419,4 +474,4 @@ entries:
     urls:
     - https://github.com/MefistoBaal/Universal-Helm-Charts/releases/download/statefulset-1.0.0/statefulset-1.0.0.tgz
     version: 1.0.0
-generated: "2023-11-21T02:48:50.87772832Z"
+generated: "2023-11-21T15:44:47.275041591Z"
