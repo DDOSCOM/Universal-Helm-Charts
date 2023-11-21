@@ -7,7 +7,7 @@ metadata:
 {{- include "labels" . | indent 2 }}
 spec:
   scaleTargetRef:
-    apiVersion: apps/v2beta1
+    apiVersion: apps/v1
     kind: Deployment
     name: {{ template "name" . }}
   minReplicas: {{ .Values.autoscaling.minReplicas }}
@@ -18,11 +18,11 @@ spec:
       resource:
         name: cpu
         {{- if eq (include "hpa.apiVersion" .) "autoscaling/v2" }}
-        targetAverageUtilization: {{ .Values.autoscaling.targetCPUUtilizationPercentage }}
-        {{- else }}
         target:
           type: Utilization
           averageUtilization: {{ .Values.autoscaling.targetCPUUtilizationPercentage }}
+        {{- else }}
+        targetAverageUtilization: {{ .Values.autoscaling.targetCPUUtilizationPercentage }}
         {{- end }}
 {{- end -}}
 {{- if .Values.autoscaling.targetMemoryUtilizationPercentage }}
@@ -30,11 +30,11 @@ spec:
       resource:
         name: memory
         {{- if eq (include "hpa.apiVersion" .) "autoscaling/v2" }}
-        targetAverageUtilization: {{ .Values.autoscaling.targetMemoryUtilizationPercentage }}
-        {{- else }}
         target:
           type: Utilization
           averageUtilization: {{ .Values.autoscaling.targetMemoryUtilizationPercentage }}
+        {{- else }}
+        targetAverageUtilization: {{ .Values.autoscaling.targetMemoryUtilizationPercentage }}
         {{- end }}
 {{- end }}
 {{- end }}
