@@ -4,4 +4,4 @@ This is a set of standardized helm charts meant for installation of best-practic
 
 # Docs
 
-Find the rest of documentation [here](https://helm.mefistobaal.tech)
+Find the rest of documentation [here](https://helm.ddoscom.tech)
