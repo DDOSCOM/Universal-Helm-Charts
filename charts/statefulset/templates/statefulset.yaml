@@ -177,6 +177,28 @@ spec:
             {{- end }}
 {{ end }}
 
+# This is for our startup probes, which dictate if a pod is healthy or should be replaced
+{{- if .Values.startupProbe.enabled }}
+          startupProbe:
+            periodSeconds: {{ .Values.startupProbe.periodSeconds }}
+            timeoutSeconds: {{ .Values.startupProbe.timeoutSeconds }}
+            failureThreshold: {{ .Values.startupProbe.failureThreshold }}
+{{- if eq .Values.startupProbe.probeType "httpGet" }}
+            httpGet:
+              path: {{ .Values.startupProbe.path }}
+              port: {{ .Values.startupProbe.port }}
+{{- else if eq .Values.startupProbe.probeType "tcpSocket" }}
+            tcpSocket:
+              port: {{ .Values.startupProbe.port }}
+{{- else if eq .Values.startupProbe.probeType "exec" }}
+            exec:
+              command:
+{{- with .Values.startupProbe.command }}
+{{ toYaml . | indent 16 }}
+{{- end -}}
+{{- end -}}
+{{- end }}
+
 # This is for our liveness probes, which dictate if a pod is healthy or should be replaced
 {{- if .Values.livenessProbe.enabled }}
           livenessProbe:
