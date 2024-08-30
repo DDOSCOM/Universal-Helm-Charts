@@ -2,6 +2,24 @@ apiVersion: v1
 entries:
   cronjob:
   - apiVersion: v1
+    created: "2024-08-30T01:38:39.59908817Z"
+    description: The Universal Cronjob Helm Chart
+    digest: b85f4b48378fa69deee81aa54976262bc513a60e80efe0e00d457224f5777b2c
+    home: https://github.com/MefistoBaal/Universal-Helm-Charts
+    keywords:
+    - cronjob
+    - helm
+    maintainers:
+    - email: shurtado@ddoscom.tech
+      name: MefistoBaal
+    name: cronjob
+    sources:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/charts/deployment
+    - https://helm.mefistobaal.tech
+    urls:
+    - https://github.com/DDOSCOM/Universal-Helm-Charts/releases/download/cronjob-1.0.6/cronjob-1.0.6.tgz
+    version: 1.0.6
+  - apiVersion: v1
     created: "2024-06-24T18:38:57.532865821Z"
     description: The Universal Cronjob Helm Chart
     digest: b9a8f3f8753fa9b08e0c062ad8b2f503df11e120bfe485069239944941d4339e
@@ -110,6 +128,25 @@ entries:
     version: 1.0.0
   cronjob-multi:
   - apiVersion: v1
+    created: "2024-08-30T01:38:39.727231553Z"
+    description: The Universal Cronjob Multi Helm Chart, to spin up many similar cronjobs
+    digest: 90c12869896cc99b20940fd322e95d820a27b4b60556af89853e13eebf5ea9f8
+    home: https://github.com/MefistoBaal/Universal-Helm-Charts
+    keywords:
+    - cronjob
+    - cronjob-multi
+    - helm
+    maintainers:
+    - email: shurtado@ddoscom.tech
+      name: MefistoBaal
+    name: cronjob-multi
+    sources:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/charts/deployment
+    - https://helm.mefistobaal.tech
+    urls:
+    - https://github.com/DDOSCOM/Universal-Helm-Charts/releases/download/cronjob-multi-1.0.5/cronjob-multi-1.0.5.tgz
+    version: 1.0.5
+  - apiVersion: v1
     created: "2024-06-24T18:38:57.664721343Z"
     description: The Universal Cronjob Multi Helm Chart, to spin up many similar cronjobs
     digest: 0f91b569ca8431642d2deafd6e0fb6a96e3a6e19efcc1c87869aa0e91e80dcc8
@@ -204,6 +241,24 @@ entries:
     - https://github.com/MefistoBaal/Universal-Helm-Charts/releases/download/cronjob-multi-1.0.0/cronjob-multi-1.0.0.tgz
     version: 1.0.0
   deployment:
+  - apiVersion: v1
+    created: "2024-08-30T01:38:39.858145961Z"
+    description: The Universal Deployment Helm Chart
+    digest: 90556dee75430e198e8a5fe8285df808196f847ce32c330c3292235d111a01fc
+    home: https://github.com/MefistoBaal/Universal-Helm-Charts
+    keywords:
+    - deployment
+    - helm
+    maintainers:
+    - email: shurtado@ddoscom.tech
+      name: MefistoBaal
+    name: deployment
+    sources:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/charts/deployment
+    - https://helm.mefistobaal.tech
+    urls:
+    - https://github.com/DDOSCOM/Universal-Helm-Charts/releases/download/deployment-1.0.15/deployment-1.0.15.tgz
+    version: 1.0.15
   - apiVersion: v1
     created: "2024-07-23T02:10:54.932999077Z"
     description: The Universal Deployment Helm Chart
@@ -477,6 +532,24 @@ entries:
     version: 0.0.1
   statefulset:
   - apiVersion: v1
+    created: "2024-08-30T01:38:39.983099654Z"
+    description: The Universal Statefulset Helm Chart
+    digest: dc71f137025607b0789994285e26acb2d273e03bb3378273330c100a090cc4d6
+    home: https://github.com/MefistoBaal/Universal-Helm-Charts
+    keywords:
+    - statefulset
+    - helm
+    maintainers:
+    - email: shurtado@ddoscom.tech
+      name: MefistoBaal
+    name: statefulset
+    sources:
+    - https://github.com/MefistoBaal/Universal-Helm-Charts/charts/deployment
+    - https://helm.mefistobaal.tech
+    urls:
+    - https://github.com/DDOSCOM/Universal-Helm-Charts/releases/download/statefulset-1.0.6/statefulset-1.0.6.tgz
+    version: 1.0.6
+  - apiVersion: v1
     created: "2024-07-23T02:10:55.066259382Z"
     description: The Universal Statefulset Helm Chart
     digest: 0622e5831eed956d24212ba9faf4f9339cf38db2acc410971038763698ddcc85
@@ -583,4 +656,4 @@ entries:
     urls:
     - https://github.com/MefistoBaal/Universal-Helm-Charts/releases/download/statefulset-1.0.0/statefulset-1.0.0.tgz
     version: 1.0.0
-generated: "2024-07-23T02:10:55.066391852Z"
+generated: "2024-08-30T01:38:39.983278459Z"
